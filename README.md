@@ -1,6 +1,6 @@
-# EachWithRank
+# each_with_rank
 
-TODO: Write a gem description
+Rank iterator for Enumerable
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``` ruby
+array = []
+[100, 100, 300].each_with_rank do |number, rank|
+  array << [number, rank]
+end
+array # => [[100, 1], [100, 1], [300, 3]]
+```
 
 ## Contributing
 
